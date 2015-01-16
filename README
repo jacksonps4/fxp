@@ -2,3 +2,33 @@ fxp:
 
 A basic but fast FIX protocol decoder.
 
+BUILDING
+========
+
+$ ./configure
+$ make
+$ sudo make install
+
+USAGE
+=====
+
+$ cat fix_log | fxp
+
+OUTPUT
+======
+
+Messages are formatted in a readable form:
+
+FIX message
+------------
+  [    8] :                    BeginString : FIXT.1.1
+  [    9] :                     BodyLength : 56
+  [   35] :                        MsgType : 0
+  [   34] :                      MsgSeqNum : 6
+  [   49] :                   SenderCompID : fix_user
+  [   52] :                    SendingTime : 20140101-00:00:01.500
+  [   56] :                   TargetCompID : user
+  [   10] :                       CheckSum : 152
+------------
+
+
