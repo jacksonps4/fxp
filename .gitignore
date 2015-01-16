@@ -1,0 +1,8 @@
+*.o
+fxp
+tests
+config.*
+.deps
+Makefile
+stamp-h1
+autom4te.cache
